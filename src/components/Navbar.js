@@ -33,7 +33,7 @@ function Navbar() {
             <i class='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            <i class="fas fa-football-ball"></i>
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
@@ -42,8 +42,13 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
+              <Link to='/aboutme' className='nav-links' onClick={closeMobileMenu}>
+                About Me
+              </Link>
+            </li>
+            <li className='nav-item'>
               <Link
-                to='/services'
+                to='/projects'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -52,7 +57,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/products'
+                to='/langs-skills'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -62,7 +67,7 @@ function Navbar() {
 
             <li>
               <Link
-                to='/sign-up'
+                to='/contact'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
